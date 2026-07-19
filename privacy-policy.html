@@ -16,19 +16,19 @@
   }
   h1 { font-size: 26px; margin-bottom: 4px; }
   h2 { font-size: 18px; margin-top: 40px; }
+  h3 { font-size: 15px; margin-top: 24px; }
   p, li { color: #333; }
   .updated { color: #676767; font-size: 14px; }
   a { color: #2E564E; }
   .back { display: inline-block; margin-bottom: 24px; font-size: 14px; }
   footer { margin-top: 48px; color: #999; font-size: 13px; }
-  code { background: #f1f2f5; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
 </style>
 </head>
 <body>
   <a class="back" href="index.html">&larr; Interval</a>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 11, 2026</p>
+  <p class="updated">Last updated: July 18, 2026</p>
 
   <p><strong>Developer:</strong> Anastasiia Bielievitina<br>
   <strong>App:</strong> Interval — Minimalist Calendar<br>
@@ -37,68 +37,73 @@
 
   <p>Interval is a calm calendar and planning app for capturing what's on your mind, keeping it safe, and deciding what belongs in your day when you're ready. This Privacy Policy explains what information Interval collects, how it is used, and what choices you have.</p>
 
-  <p>Interval does not require an account to use. We do not sell your personal information and we do not use your data for advertising or cross-app tracking.</p>
+  <p>Interval works fully offline without an account. Sign in with Apple is optional and only used if you choose to sync across devices. We do not sell your personal information and we do not use your data for advertising or cross-app tracking.</p>
 
   <h2>Information We Collect</h2>
 
   <h3>Information you create in the app</h3>
   <p>When you use Interval, you may create and store tasks, notes, attachments, links, and files; calendar placement, reminders, and preferences; and profile settings such as avatar choice and appearance.</p>
-  <p>This information is stored <strong>on your device</strong>. If you turn on <strong>iCloud sync</strong> in Settings, your data is also stored in <strong>your personal iCloud account</strong> via Apple's iCloud services. We do not receive this data on our own servers.</p>
+  <p>By default this information is stored <strong>on your device</strong>. If you sign in with Apple and enable cloud sync, the same information is also stored in our cloud database (hosted by Supabase) so it can appear on your other devices and in the web app. That cloud copy is tied to your Interval account (your Sign in with Apple identity).</p>
 
-  <h3>Information sent to our servers (Pro features only)</h3>
+  <h3>Sign in with Apple (optional)</h3>
+  <p>If you choose <strong>Sign in with Apple</strong>, Apple may provide us with an opaque user identifier and, depending on your choices, your name and/or email address (or a private relay email). We use this only to authenticate you and sync your plan across devices. You can delete your account and cloud data from within Interval Settings → Data sync → Delete account.</p>
+
+  <h3>Information sent to our servers (Pro features)</h3>
   <p>If you subscribe to <strong>Interval Pro</strong> and use certain features, limited data is sent to our servers to provide those features:</p>
   <ul>
-    <li><strong>Refine with AI</strong> — When you choose to refine a note, the text content of that note (and related titles) is sent to our backend for processing. Image and file attachments in notes are <strong>not</strong> sent. We also send an anonymous installation identifier to enforce rate limits. Refined text is returned to your device; we do not use this content for advertising or profiling.</li>
+    <li><strong>Refine with AI</strong> — When you choose to refine a note, the text content of that note (and related titles) is sent to our backend for processing. Image and file attachments in notes are <strong>not</strong> sent. We also send an anonymous installation identifier to enforce rate limits.</li>
     <li><strong>Web clipper (Share Extension)</strong> — When you share a link to Interval from another app, the URL you share is sent to our backend to generate a title and note summary. We do not access your full browsing history.</li>
-    <li><strong>Siri capture (Pro)</strong> — When you add an item via Siri, the dictated text is processed on your device and stored locally (or in your iCloud account if sync is enabled). It is <strong>not</strong> sent to our servers.</li>
+    <li><strong>Siri capture (Pro)</strong> — When you add an item via Siri, the dictated text is processed on your device and stored locally (and synced to your cloud account if you are signed in). It is <strong>not</strong> sent to the Refine / web-clipper backends unless you separately use those features.</li>
   </ul>
 
   <h3>Information handled by Apple</h3>
-  <p>The following are processed by Apple, not by us directly: App Store purchases and subscriptions (via StoreKit), iCloud sync (if enabled), and Apple Calendar access (if you grant permission, events are read on your device to display alongside your tasks; we do not upload your calendar to our servers). We do not receive your payment card number or Apple ID credentials.</p>
-
-  <h3>Information we do not collect</h3>
-  <p>Interval does not collect your name, email address, or phone number (unless you contact us directly), precise location, contacts, health or fitness data, advertising identifiers, or usage analytics via third-party SDKs.</p>
+  <p>The following are processed by Apple, not by us directly: App Store purchases and subscriptions (via StoreKit), Sign in with Apple, and Apple Calendar access (if you grant permission, events are read on your device to display alongside your tasks; we do not upload your calendar to our servers). We do not receive your payment card number or Apple ID password.</p>
 
   <h2>How We Use Information</h2>
-  <p>We use information only to provide core app functionality, operate Pro features you choose to use, process your subscription through Apple, prevent abuse of our servers, and respond to support requests. We do not use your information for third-party advertising, our own advertising, marketing emails, or cross-app tracking.</p>
+  <p>We use information only to provide core app functionality, sync your plan across devices when you opt in, operate Pro features you choose to use, process your subscription through Apple, prevent abuse of our servers, and respond to support requests. We do not use your information for third-party advertising, our own advertising, marketing emails, or cross-app tracking.</p>
 
   <h2>Data Storage and Retention</h2>
-  <p>On-device data remains on your device until you delete it or remove the app. iCloud data is governed by Apple's iCloud terms and your iCloud settings. Server requests (Refine and web clipper) are processed to fulfill your request; we retain server logs only as long as needed for security, debugging, and abuse prevention, then delete or anonymize them.</p>
+  <p>On-device data remains on your device until you delete it or remove the app. Cloud-synced data is retained in our database for as long as your account exists. You can permanently delete your account and cloud data in the app (Settings → Data sync → Delete account). Server logs for Pro features are retained only as long as needed for security, debugging, and abuse prevention, then deleted or anonymized.</p>
 
   <h2>Sharing with Third Parties</h2>
-  <p>We do not sell your personal information. We share data only with service providers that help us operate Pro features (cloud hosting and AI processing for Refine, instructed to process data only for the requested feature), with Apple when you use App Store purchases, iCloud, or system services, and if required by law.</p>
+  <p>We do not sell your personal information. We share data only with:</p>
+  <ul>
+    <li><strong>Supabase</strong> — cloud database, authentication, and file storage for optional cross-device sync</li>
+    <li>Service providers that help us operate Pro features (cloud hosting and AI processing for Refine), instructed to process data only for the requested feature</li>
+    <li>Apple, when you use App Store purchases, Sign in with Apple, or system services</li>
+    <li>Authorities if required by law</li>
+  </ul>
 
   <h2>Your Choices and Controls</h2>
   <ul>
-    <li>Delete your data by deleting items in the app or uninstalling Interval</li>
-    <li>Turn off iCloud sync in Interval Settings</li>
+    <li>Use Interval entirely offline without signing in</li>
+    <li>Sign out to stop syncing new changes from this device</li>
+    <li>Delete your account and cloud data in Settings → Data sync → Delete account</li>
+    <li>Delete local data by deleting items in the app or uninstalling Interval</li>
     <li>Revoke Calendar access in iOS Settings → Interval</li>
-    <li>Avoid server transmission by not using Refine or the web clipper</li>
+    <li>Avoid Pro server transmission by not using Refine or the web clipper</li>
     <li>Cancel your subscription in iOS Settings → Apple ID → Subscriptions</li>
     <li>Contact us at <a href="mailto:abielievitina@gmail.com">abielievitina@gmail.com</a> with privacy questions or requests</li>
   </ul>
-  <p>Because Interval has no user accounts, we cannot identify you from server logs unless you contact us and provide details to help us locate a specific request.</p>
 
   <h2>Children's Privacy</h2>
-  <p>Interval is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it.</p>
+  <p>Interval is not directed to children under 13, and we do not knowingly collect personal information from children under 13.</p>
 
-  <h2>International Users (including the European Union)</h2>
-  <p>If you are in the European Economic Area or United Kingdom, you have rights under applicable data protection laws, including the right to access, correct, delete, or restrict processing of your personal data. Our legal basis for processing server-side data is performance of a contract and legitimate interests in operating and securing our services. For EU App Store listings, trader contact information may be displayed as required by the Digital Services Act.</p>
+  <h2>International Users</h2>
+  <p>If you use Interval from the European Economic Area, UK, or similar jurisdictions, you may have rights to access, correct, delete, or export your personal data, and to object to or restrict certain processing. Contact us to exercise these rights. Our legal basis for processing is typically contract performance (providing the app and sync you request) and legitimate interests (security and abuse prevention).</p>
 
-  <h2>California Privacy Rights</h2>
-  <p>California residents may have additional rights under the CCPA/CPRA, including the right to know what personal information is collected, to delete personal information, and to opt out of the sale of personal information. <strong>We do not sell personal information.</strong></p>
+  <h2>California Residents</h2>
+  <p>We do not sell or share personal information as those terms are defined under the CCPA/CPRA. You may request access to or deletion of personal information we hold by contacting us.</p>
 
   <h2>Security</h2>
-  <p>We use reasonable technical and organizational measures to protect information sent to our servers, including encrypted connections (HTTPS). No method of transmission or storage is 100% secure.</p>
+  <p>We use industry-standard measures including encrypted transport (HTTPS/TLS), row-level security so each signed-in user can only access their own cloud rows, and Apple's Sign in with Apple for authentication. No method of transmission or storage is 100% secure.</p>
 
-  <h2>Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. We will post the updated version at this URL and change the "Last updated" date above. Continued use of Interval after changes means you accept the updated policy.</p>
+  <h2>Changes</h2>
+  <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will change when we do. Continued use of Interval after an update constitutes acceptance of the revised policy.</p>
 
-  <h2>Contact Us</h2>
-  <p>Anastasiia Bielievitina<br>
-  548 26th Ave, San Francisco, CA 94121, United States<br>
-  Email: <a href="mailto:abielievitina@gmail.com">abielievitina@gmail.com</a></p>
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:abielievitina@gmail.com">abielievitina@gmail.com</a></p>
 
-  <footer>© 2026 Anastasiia Bielievitina</footer>
+  <footer>© 2026 Anastasiia Bielievitina. Interval.</footer>
 </body>
 </html>
