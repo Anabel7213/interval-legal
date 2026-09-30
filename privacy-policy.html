@@ -28,7 +28,7 @@
   <a class="back" href="index.html">&larr; Interval</a>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 18, 2026</p>
+  <p class="updated">Last updated: September 30, 2026</p>
 
   <p><strong>Developer:</strong> Anastasiia Bielievitina<br>
   <strong>App:</strong> Interval — Minimalist Calendar<br>
@@ -56,11 +56,15 @@
     <li><strong>Siri capture (Pro)</strong> — When you add an item via Siri, the dictated text is processed on your device and stored locally (and synced to your cloud account if you are signed in). It is <strong>not</strong> sent to the Refine / web-clipper backends unless you separately use those features.</li>
   </ul>
 
+  <h3>Product usage analytics</h3>
+  <p>To learn which parts of Interval help and which get in the way, the Interval web app (theintervalapp.com) records product usage events — for example, that a page was opened, an item was created or completed, a calendar view was switched, or a sign-in failed — and the iPhone and iPad apps may record the same kinds of events. We use <strong>PostHog</strong>, a product analytics service, to store and analyze them.</p>
+  <p>These events describe actions, not content. They never include the titles or text of your tasks and notes, search queries, your email address, or the contents of shared links, and session recording is turned off. If you are signed in, events are linked to your account's internal identifier; otherwise they use a random identifier stored on your device. Like any web request, events reach PostHog with your IP address, which may be used to estimate a rough location such as your country. We do not use analytics for advertising or cross-app tracking.</p>
+
   <h3>Information handled by Apple</h3>
   <p>The following are processed by Apple, not by us directly: App Store purchases and subscriptions (via StoreKit), Sign in with Apple, and Apple Calendar access (if you grant permission, events are read on your device to display alongside your tasks; we do not upload your calendar to our servers). We do not receive your payment card number or Apple ID password.</p>
 
   <h2>How We Use Information</h2>
-  <p>We use information only to provide core app functionality, sync your plan across devices when you opt in, operate Pro features you choose to use, process your subscription through Apple, prevent abuse of our servers, and respond to support requests. We do not use your information for third-party advertising, our own advertising, marketing emails, or cross-app tracking.</p>
+  <p>We use information only to provide core app functionality, sync your plan across devices when you opt in, operate Pro features you choose to use, process your subscription through Apple, prevent abuse of our servers, understand how Interval's features are used so we can improve them, and respond to support requests. We do not use your information for third-party advertising, our own advertising, marketing emails, or cross-app tracking.</p>
 
   <h2>Data Storage and Retention</h2>
   <p>On-device data remains on your device until you delete it or remove the app. Cloud-synced data is retained in our database for as long as your account exists. You can permanently delete your account and cloud data in the app (Settings → Data sync → Delete account). Server logs for Pro features are retained only as long as needed for security, debugging, and abuse prevention, then deleted or anonymized.</p>
@@ -69,6 +73,7 @@
   <p>We do not sell your personal information. We share data only with:</p>
   <ul>
     <li><strong>Supabase</strong> — cloud database, authentication, and file storage for optional cross-device sync</li>
+    <li><strong>PostHog</strong> — product usage analytics (actions only, never your content)</li>
     <li>Service providers that help us operate Pro features (cloud hosting and AI processing for Refine), instructed to process data only for the requested feature</li>
     <li>Apple, when you use App Store purchases, Sign in with Apple, or system services</li>
     <li>Authorities if required by law</li>
@@ -81,6 +86,7 @@
     <li>Delete your account and cloud data in Settings → Data sync → Delete account</li>
     <li>Delete local data by deleting items in the app or uninstalling Interval</li>
     <li>Revoke Calendar access in iOS Settings → Interval</li>
+    <li>Turn on Do Not Track or Global Privacy Control in your browser to stop the web app from loading analytics</li>
     <li>Avoid Pro server transmission by not using Refine or the web clipper</li>
     <li>Cancel your subscription in iOS Settings → Apple ID → Subscriptions</li>
     <li>Contact us at <a href="mailto:abielievitina@gmail.com">abielievitina@gmail.com</a> with privacy questions or requests</li>
